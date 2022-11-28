@@ -8,8 +8,21 @@ The purpose of this analysis is to alllow someone ot see the detailed return rep
 
 
 ## Results
+I intially created a code to run this analysis that was able to execute code of rthe 12 stocks provided;  however, I then refactored the code in order ot perform bettter over a multitude ofstocks in a single loop and a much quicker execution time.  
+
+I did this by creating a nested for loop that runs through each stock and outputs the data for that stock individually. 
+
+However, I did run into a problem with my nested for loop that wasn't allowing the loop to move onto the next index.  I tried my best to debug and figure out where the problem lied, but unfortunately I wasn't ablw to find the mistake.  With that being said, I was still able run the code, and the refactored code ran in significantly less time that the original code.
+
+Original code run time:
+<img width="257" alt="Screenshot 2022-11-27 at 9 55 46 PM" src="https://user-images.githubusercontent.com/117620028/204216084-b56fee0b-79dd-4df4-874c-f8b0a3bf20f1.png">
+
+Refactored code run time:
+<img width="255" alt="Screenshot 2022-11-27 at 9 57 01 PM" src="https://user-images.githubusercontent.com/117620028/204216097-7065382c-ddd9-475f-80e0-a8e779e90dbe.png">
+
 
 ### Refactored Code
+This is the code that I used after refactoring. 
 
     '1a) Create a ticker Index
     
@@ -77,3 +90,6 @@ The purpose of this analysis is to alllow someone ot see the detailed return rep
   
 
 ## Summary
+Overall, it is clear that refactoring code has great benefits.  In this situation, the code was much shorter and quicker to write, as well as allowing much larger data sets to be incoroporated.  Not only would someone be able to run this code over 12 stocks, but it would also be easy to use this code for an even larger analysis.  
+
+In general, refactoring code can be very beneficial when working with large data sets.  It can can make your code more efficient and quicker to run.  However, it can sometimes bring disadvantages if your current code is already running smoothly.  
