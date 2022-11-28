@@ -11,7 +11,7 @@ The purpose of this analysis is to alllow someone ot see the detailed return rep
 
 ### Refactored Code
 
-'1a) Create a ticker Index
+    '1a) Create a ticker Index
     
     Dim tickerIndex As Single
     
@@ -27,7 +27,7 @@ The purpose of this analysis is to alllow someone ot see the detailed return rep
     ''2a) Create a for loop to initialize the tickerVolumes to zero.
     
     For j = 0 To 11
-   tickerVolumes(j) = 0
+     tickerVolumes(j) = 0
     Next j
     ''2b) Loop over all the rows in the spreadsheet.
     For i = 2 To RowCount
@@ -74,12 +74,6 @@ The purpose of this analysis is to alllow someone ot see the detailed return rep
             Cells(4 + i, 2).Value = tickerVolumes(tickerIndex)
             Cells(4 + i, 3).Value = tickerEndingPrices(tickerIndex) / tickerStartingPrices(tickerIndex) - 1
 
-  For i = 0 To 11
-        
-        Worksheets("All Stocks Analysis").Activate
-        
-            Cells(4 + i, 1).Value = tickers(tickerIndex)
-            Cells(4 + i, 2).Value = tickerVolumes(tickerIndex)
-            Cells(4 + i, 3).Value = tickerEndingPrices(tickerIndex) / tickerStartingPrices(tickerIndex) - 1
+  
 
 ## Summary
